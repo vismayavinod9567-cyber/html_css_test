@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduStream Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid dashboard-container">
+        <div class="row">
+
+            <!-- SIDEBAR -->
+            <aside class="col-lg-3 col-xl-3 sidebar">
+
+                <div class="sidebar-content">
+
+
+                    <div class="brand">
+                        <div class="brand-icon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <div>
+                            <h4>EduStream</h4>
+                            <p>v2.4 Pro Portal</p>
+                        </div>
+                    </div>
+
+                    <!-- nav bar start --->
+                    <nav class="sidebar-nav">
+
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-grid-fill"></i>
+                            <span>Dashboard</span>
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-book"></i>
+                            <span>My Courses</span>
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-calendar3"></i>
+                            <span>Schedule</span>
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-left-text"></i>
+                            <span>Discussions</span>
+                            <span class="notification-count">4</span>
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>Analytics</span>
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-gear"></i>
+                            <span>Settings</span>
+                        </a>
+
+                    </nav>
+
+                    <!-- ------ navbar end ------- -->
+                    <!-- Profile -->
+                    <div class="profile mt-4">
+                        <img src="avathar.avif" alt="Profile Picture">
+
+                        <div>
+                            <h5>Eleanor Pence</h5>
+                            <p>ID: #984251</p>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+
+            <!--content-->
+            <main class="col-lg-9 col-xl-9 main-content">
+
+                <!-- HEADER -->
+                <header class="dashboard-header">
+
+                    <div>
+                        <h1>Welcome Back, Eleanor</h1>
+                        <p>Here's your academic distribution progress matrix for today.</p>
+                    </div>
+
+                    <div class="header-actions">
+
+                        <div class="search-box">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="Search parameters...">
+                        </div>
+
+                        <button class="notification-btn">
+                            <i class="bi bi-bell-fill"></i>
+                            <span></span>
+                        </button>
+
+                    </div>
+
+                </header>
+
+
+                <section class="row stats-section">
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stat-card">
+                            <div class="stat-heading">
+                                <span>Cumulative<br>GPA</span>
+                                <span class="stat-badge green">
+                                    <i class="bi bi-arrow-up"></i> +0.2
+                                </span>
+                            </div>
+                            <h2>3.92</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stat-card">
+                            <div class="stat-heading">
+                                <span>Attendance<br>Rate</span>
+                                <span class="stat-badge blue">Target:<br>95%</span>
+                            </div>
+                            <h2>97.4%</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stat-card">
+                            <div class="stat-heading">
+                                <span>Completed<br>Hours</span>
+                                <span class="stat-badge cyan">84<br>Required</span>
+                            </div>
+                            <h2>62 / 84</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stat-card">
+                            <div class="stat-heading">
+                                <span>Pending<br>Tasks</span>
+                                <span class="stat-badge red">Due this<br>week</span>
+                            </div>
+                            <h2>5</h2>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="row lower-section">
+
+                    <!-- Course Interfaces -->
+                    <div class="col-xl-8">
+                        <div class="content-card courses-card">
+
+                            <div class="card-heading">
+                                <h3>Active Course Interfaces</h3>
+                                <a href="#">View Catalog <i class="bi bi-arrow-right"></i></a>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table course-table">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Course Title</th>
+                                            <th>Instructor</th>
+                                            <th>Progress Status</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                <div class="course-info">
+                                                    <div class="course-icon purple">
+                                                        <i class="bi bi-braces"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6>Advanced Software Architectures</h6>
+                                                        <p>CS-402 • 4 Credits</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>Dr. Marcus Vance</td>
+
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-blue" style="width: 82%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="course-info">
+                                                    <div class="course-icon yellow">
+                                                        <i class="bi bi-diagram-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6>Neural Networks & Deep Learning</h6>
+                                                        <p>AI-510 • 3 Credits</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>Prof. Alan Chen</td>
+
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-yellow" style="width: 45%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="course-info">
+                                                    <div class="course-icon cyan-bg">
+                                                        <i class="bi bi-shield-check"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6>Cryptographic Protocol Systems</h6>
+                                                        <p>SEC-380 • 4 Credits</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>Dr. Sarah Jenkins</td>
+
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-cyan" style="width: 96%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <div class="content-card timeline-card">
+
+                            <h3>Academic Timeline</h3>
+
+                            <div class="timeline">
+
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+
+                                    <h6 class="today">TODAY • 23:59 PM</h6>
+                                    <h5>Neural Net Project Submission</h5>
+
+                                    <p>
+                                        Submit comprehensive structural
+                                        documentation and deployment notebooks.
+                                    </p>
+
+                                    <div class="partners">
+                                        <span class="partner-avatar">M</span>
+                                        <span class="partner-avatar second">A</span>
+                                        <span>+2 partners</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+
+                                    <h6 class="tomorrow">TOMORROW • 10:00 AM</h6>
+                                    <h5>Architecture Guest Symposium</h5>
+
+                                    <p>
+                                        Mandatory industry interactive lecture
+                                        focusing on microservice design structures.
+                                    </p>
+                                </div>
+
+
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+
+                                    <h6 class="date">NOV 14, 2026</h6>
+                                    <h5>Mid-term Examination Block</h5>
+
+                                    <p>
+                                        Cryptographic validation structures
+                                        modules evaluation window.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+    </div>
+    </div>
+    </div>
+    </aside>
+    </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
